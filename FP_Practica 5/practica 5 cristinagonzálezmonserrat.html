@@ -1,0 +1,80 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Horari</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="viewport" content="wnameth=device-wnameth, user-scalable=no">
+
+    <link rel="stylesheet" href="style.css">
+    <script language="javascript">
+        function Show(cell, i) {
+            cell.style.textShadow = "0 0 10px #ccfff5"
+            cell.style.backgroundColor = "#70bd91";
+            var x = document.getElementsByName(cell.attributes["name"].value);
+            var j;
+            for (j = 0; j < x.length; j++) {
+                x[j].style.boxShadow = "0 0 10px #00ffcc";
+            }
+        }
+        function MouseOut(cell, i) {
+            cell.style.textShadow = "none"
+            cell.style.backgroundColor = "rgb(236, 236, 236)";
+            var x = document.getElementsByName(cell.attributes["name"].value);
+            var j;
+            for (j = 0; j < x.length; j++) {
+                x[j].style.boxShadow = "none";
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="titol">
+        Horari FP DAW-dual 2017-2018
+    </div>
+    <div class="tabla">
+        <table>
+            <tr>
+                <th>Dilluns</th>
+                <th>Dimarts</th>
+                <th>Dimecres</th>
+                <th>Dijous</th>
+                <th>Divendres</th>
+            </tr>
+            <tr>
+                <td name="1" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">BBDD</td>
+                <td name="2" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">SI</td>
+                <td name="2" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">SI</td>
+                <td name="3" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">PRG</td>
+                <td name="1" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">BBDD</td>
+            </tr>
+            <tr>
+                <td name="5" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">LLMM</td>
+                <td name="6" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">ED</td>
+                <td name="4" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">FOL</td>
+                <td name="3" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">PRG</td>
+                <td name="1" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">BBDD</td>
+            </tr>
+            <tr>
+                <td name="5" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">LLMM</td>
+                <td name="6" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">ED</td>
+                <td name="4" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">FOL</td>
+                <td name="3" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">PRG</td>
+                <td name="1" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">BBDD</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class = "BBDD" id = "BBDD">
+        <h1>Bases de dades</h1>
+        <p>Assignatura dedicada al l'aprenentatge de tots els coneixements necessaris per analitzar, crear, modificar i usar una base de dades.</p>
+    </div>
+
+</body>
+
+</html>
