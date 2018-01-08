@@ -19,7 +19,7 @@
             for (j = 0; j < x.length; j++) {
                 x[j].style.boxShadow = "0 0 10px #00ffcc";
             }
-            document.getElementById(cell.attributes["name"].value).style.display = "block";
+            
             
         }
         function MouseOut(cell, i) {
@@ -30,8 +30,16 @@
             for (j = 0; j < x.length; j++) {
                 x[j].style.boxShadow = "none";
             }
-            document.getElementById(cell.attributes["name"].value).style.display = "none";
+            
         }
+        function Click(cell){
+            for (var k = 1; k < 7; k++){
+                document.getElementById((k).toString()).style.display = "none";
+            }
+            document.getElementById(cell.attributes["name"].value).style.display = "block";
+        }
+
+
     </script>
 
 </head>
@@ -50,25 +58,25 @@
                 <th>Divendres</th>
             </tr>
             <tr>
-                <td name="1" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">BBDD</td>
-                <td name="2" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">SI</td>
-                <td name="2" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">SI</td>
-                <td name="3" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">PRG</td>
-                <td name="1" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">BBDD</td>
+                <td name="1" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">BBDD</td>
+                <td name="2" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">SI</td>
+                <td name="2" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">SI</td>
+                <td name="3" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">PRG</td>
+                <td name="1" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">BBDD</td>
             </tr>
             <tr>
-                <td name="5" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">LLMM</td>
-                <td name="6" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">ED</td>
-                <td name="4" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">FOL</td>
-                <td name="3" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">PRG</td>
-                <td name="1" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">BBDD</td>
+                <td name="5" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">LLMM</td>
+                <td name="6" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">ED</td>
+                <td name="4" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">FOL</td>
+                <td name="3" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">PRG</td>
+                <td name="1" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">BBDD</td>
             </tr>
             <tr>
-                <td name="5" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">LLMM</td>
-                <td name="6" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">ED</td>
-                <td name="4" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">FOL</td>
-                <td name="3" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">PRG</td>
-                <td name="1" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">BBDD</td>
+                <td name="5" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">LLMM</td>
+                <td name="6" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">ED</td>
+                <td name="4" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">FOL</td>
+                <td name="3" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">PRG</td>
+                <td name="1" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">BBDD</td>
             </tr>
         </table>
     </div>
