@@ -13,12 +13,14 @@
     <script language="javascript">
         function Show(cell, i) {
             cell.style.textShadow = "0 0 10px #ccfff5"
-            cell.style.backgroundColor = "#70bd91";
+            cell.style.backgroundColor = "rgb(128, 165, 93)";
             var x = document.getElementsByName(cell.attributes["name"].value);
             var j;
             for (j = 0; j < x.length; j++) {
                 x[j].style.boxShadow = "0 0 10px #00ffcc";
             }
+            document.getElementById(cell.attributes["name"].value).style.display = "block";
+            
         }
         function MouseOut(cell, i) {
             cell.style.textShadow = "none"
@@ -28,6 +30,7 @@
             for (j = 0; j < x.length; j++) {
                 x[j].style.boxShadow = "none";
             }
+            document.getElementById(cell.attributes["name"].value).style.display = "none";
         }
     </script>
 
@@ -70,9 +73,35 @@
         </table>
     </div>
     
-    <div class = "BBDD" id = "BBDD">
+    <div class = "desc" id = "1">
+        <style> </style>
         <h1>Bases de dades</h1>
         <p>Assignatura dedicada al l'aprenentatge de tots els coneixements necessaris per analitzar, crear, modificar i usar una base de dades.</p>
+    </div>
+
+    <div class = "desc"  id = "2">
+        <h1>Sistemes Informàtics</h1>
+        <p>Assignatura dedicada al l'aprenentatge de tots els coneixements necessaris per usar els sistemes informàtics necesaris per a les tasques de programació, així com aprendre els orígens i funcionament dels ordinadors.</p>
+    </div>
+
+    <div class = "desc"  id = "3">
+        <h1>Programació</h1>
+        <p>Assignatura dedicada al l'aprenentatge de tots els coneixements necessaris per a la programació.</p>
+    </div>
+
+    <div class = "desc"  id = "5">
+            <h1>Programació</h1>
+            <p>Assignatura dedicada al l'aprenentatge de tots els coneixements necessaris per a la programació.</p>
+        </div>
+
+    <div class = "desc"  id = "6">
+        <h1>Entorns de Desenvolupament</h1>
+        <p>Assignatura dedicada al l'aprenentatge de tots els coneixements necessaris per a entendre i usar els entorns necessaris per a programar.</p>
+    </div>
+
+    <div class = "desc"  id = "4">
+        <h1>Formació i Orientació Laboral</h1>
+        <p>Assignatura dedicada al l'aprenentatge de tots els coneixements necessaris per introduir-se i desenvolupar-se en el món laboral.</p>
     </div>
 
 </body>
