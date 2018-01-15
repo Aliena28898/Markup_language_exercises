@@ -14,7 +14,7 @@
         function Show(cell, i) {
             cell.style.textShadow = "0 0 10px #ccfff5"
             cell.style.backgroundColor = "rgb(128, 165, 93)";
-            var x = document.getElementsByName(cell.attributes["name"].value);
+            var x = document.getElementsByClassName(cell.attributes["class"].value);
             var j;
             for (j = 0; j < x.length; j++) {
                 x[j].style.boxShadow = "0 0 10px #00ffcc";
@@ -25,7 +25,7 @@
         function MouseOut(cell, i) {
             cell.style.textShadow = "none"
             cell.style.backgroundColor = "rgb(236, 236, 236)";
-            var x = document.getElementsByName(cell.attributes["name"].value);
+            var x = document.getElementsByClassName(cell.attributes["class"].value);
             var j;
             for (j = 0; j < x.length; j++) {
                 x[j].style.boxShadow = "none";
@@ -36,7 +36,7 @@
             for (var k = 1; k < 7; k++){
                 document.getElementById((k).toString()).style.display = "none";
             }
-            document.getElementById(cell.attributes["name"].value).style.display = "block";
+            document.getElementById(cell.attributes["class"].value).style.display = "block";
         }
 
 
@@ -58,31 +58,30 @@
                 <th>Divendres</th>
             </tr>
             <tr>
-                <td name="1" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">BBDD</td>
-                <td name="2" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">SI</td>
-                <td name="2" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">SI</td>
-                <td name="3" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">PRG</td>
-                <td name="1" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">BBDD</td>
+                <td class = "1" onClick = "Click(this)" onMouseOver="Show(this)" onMouseOut="MouseOut(this)">BBDD</td>
+                <td class = "2" onClick = "Click(this)" onMouseOver="Show(this)" onMouseOut="MouseOut(this)">SI</td>
+                <td class = "2" onClick = "Click(this)" onMouseOver="Show(this)" onMouseOut="MouseOut(this)">SI</td>
+                <td class = "3" onClick = "Click(this)" onMouseOver="Show(this)" onMouseOut="MouseOut(this)">PRG</td>
+                <td class = "1" onClick = "Click(this)" onMouseOver="Show(this)" onMouseOut="MouseOut(this)">BBDD</td>
             </tr>
             <tr>
-                <td name="5" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">LLMM</td>
-                <td name="6" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">ED</td>
-                <td name="4" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">FOL</td>
-                <td name="3" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">PRG</td>
-                <td name="1" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">BBDD</td>
+                <td class = "5" onClick = "Click(this)" onMouseOver="Show(this)" onMouseOut="MouseOut(this)">LLMM</td>
+                <td class = "6" onClick = "Click(this)" onMouseOver="Show(this)" onMouseOut="MouseOut(this)">ED</td>
+                <td class = "4" onClick = "Click(this)" onMouseOver="Show(this)" onMouseOut="MouseOut(this)">FOL</td>
+                <td class = "3" onClick = "Click(this)" onMouseOver="Show(this)" onMouseOut="MouseOut(this)">PRG</td>
+                <td class = "1" onClick = "Click(this)" onMouseOver="Show(this)" onMouseOut="MouseOut(this)">BBDD</td>
             </tr>
             <tr>
-                <td name="5" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">LLMM</td>
-                <td name="6" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">ED</td>
-                <td name="4" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">FOL</td>
-                <td name="3" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">PRG</td>
-                <td name="1" onClick = "Click(this)" onMouseOver="Show(this)" , onMouseOut="MouseOut(this)">BBDD</td>
+                <td class = "5" onClick = "Click(this)" onMouseOver="Show(this)" onMouseOut="MouseOut(this)">LLMM</td>
+                <td class = "6" onClick = "Click(this)" onMouseOver="Show(this)" onMouseOut="MouseOut(this)">ED</td>
+                <td class = "4" onClick = "Click(this)" onMouseOver="Show(this)" onMouseOut="MouseOut(this)">FOL</td>
+                <td class = "3" onClick = "Click(this)" onMouseOver="Show(this)" onMouseOut="MouseOut(this)">PRG</td>
+                <td class = "1" onClick = "Click(this)" onMouseOver="Show(this)" onMouseOut="MouseOut(this)">BBDD</td>
             </tr>
         </table>
     </div>
     
     <div class = "desc" id = "1">
-        <style> </style>
         <h1>Bases de dades</h1>
         <p>Assignatura dedicada al l'aprenentatge de tots els coneixements necessaris per analitzar, crear, modificar i usar una base de dades.</p>
     </div>
